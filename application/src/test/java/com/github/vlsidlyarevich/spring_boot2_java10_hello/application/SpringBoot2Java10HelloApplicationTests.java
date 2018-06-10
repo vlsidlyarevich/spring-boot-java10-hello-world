@@ -1,4 +1,4 @@
-package com.github.vlsidlyarevich.spring_boot2_java10_hello;
+package com.github.vlsidlyarevich.spring_boot2_java10_hello.application;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

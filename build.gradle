@@ -10,19 +10,19 @@ buildscript {
 	}
 }
 
-apply plugin: 'java'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
 
-group = 'com.github.vlsidlyarevich'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 10
+allprojects {
+	apply plugin: 'java'
+	apply plugin: 'org.springframework.boot'
+	apply plugin: 'io.spring.dependency-management'
 
-repositories {
-	mavenCentral()
-}
+	group = projectGroup
+	version = projectVersion
+	sourceCompatibility = javaVersion
 
-dependencies {
-	compile('org.springframework.boot:spring-boot-starter')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	repositories {
+		mavenCentral()
+	}
 }

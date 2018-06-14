@@ -1,4 +1,4 @@
-module com.github.vlsidlyarevich.spring_boot2_java10_hello.application {
+module application {
 
     requires spring.boot;
     requires spring.boot.autoconfigure;

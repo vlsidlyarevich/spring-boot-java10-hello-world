@@ -2,3 +2,5 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter'
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
+
+ext.moduleName = 'application'

@@ -1,6 +1,12 @@
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter'
+    compile project(':hello')
+
 //    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+}
+
+springBoot {
+    mainClassName = 'com.github.vlsidlyarevich.spring_boot2_java10_hello.application.Application'
 }
 
 ext.moduleName = 'application'

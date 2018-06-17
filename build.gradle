@@ -12,11 +12,6 @@ buildscript {
 
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'org.springframework.boot'
-
-springBoot {
-    mainClassName = 'com.github.vlsidlyarevich.spring_boot2_java10_hello.application.Application'
-}
 
 allprojects {
     apply plugin: 'java'

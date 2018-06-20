@@ -1,0 +1,15 @@
+dependencies {
+    compile group: 'org.springframework', name: 'spring-core'
+    compile group: 'org.springframework', name: 'spring-context'
+//    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+ext.moduleName = 'hello'

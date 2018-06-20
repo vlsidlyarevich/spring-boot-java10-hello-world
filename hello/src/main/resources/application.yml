@@ -1,0 +1,3 @@
+spring-boot-java10-hello-world:
+  hello:
+    names: "Vlad", "Artem", "Dima"

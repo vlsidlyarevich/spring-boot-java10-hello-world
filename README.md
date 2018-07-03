@@ -32,3 +32,10 @@ Ant:          Apache Ant(TM) version 1.9.11 compiled on March 23 2018
 JVM:          10.0.1 ("Oracle Corporation" 10.0.1+10)
 OS:           Mac OS X 10.13.4 x86_64
 ```
+
+### Build and running
+
+* Open project in your favourite IDE and run [Application.java](https://github.com/vlsidlyarevich/spring-boot-java10-hello-world/blob/master/application/src/main/java/com/github/vlsidlyarevich/spring_boot2_java10_hello/application/Application.java)
+* **OR** Open terminal in the project root and run ```gradle clean build```, after that run created jar with ```java -jar jarname```
+
+### How it works

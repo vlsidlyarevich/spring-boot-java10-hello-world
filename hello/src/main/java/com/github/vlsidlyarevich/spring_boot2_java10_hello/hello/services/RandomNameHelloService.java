@@ -7,15 +7,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class RandomNameHelloService implements HelloService {
 
-//    private final NameService nameService;
-//
-//    @Autowired
-//    public RandomNameHelloService(final NameService nameService) {
-//        this.nameService = nameService;
-//    }
+    private final NameService nameService;
+
+    @Autowired
+    public RandomNameHelloService(final NameService nameService) {
+        this.nameService = nameService;
+    }
 
     @Override
     public String getHello() {
-        return String.format("Hello %s!", "asd");
+        return String.format("Hello %s!", nameService.getName());
     }
 }

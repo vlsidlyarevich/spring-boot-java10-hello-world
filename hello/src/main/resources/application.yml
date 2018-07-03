@@ -1,3 +1,4 @@
 spring-boot-java10-hello-world:
   hello:
-    names: "Vlad", "Artem", "Dima"
+    names: "asd"
+#    names: "Vlad", "Artem", "Dima"

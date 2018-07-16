@@ -5,7 +5,12 @@
 ### Description
 
 Gradle-based Spring boot 2.0 hello world written with Java 10. Illustrates project Jigsaw posibilities along with Spring boot 2.0 via Gradle.<p> 
-This example shows that it is possible to integrate Spring boot 2.0 with java 10 and Jigsaw via Gradle build but it is so easy to to use but there is some kind of pitfalls.
+This example shows that it is possible to integrate Spring boot 2.0 with java 10 and Jigsaw via Gradle build but it is not so easy to use and there are a lot of pitfalls.<p> 
+Also for that moment **i am not implemented test integration**.<p>
+It is just an example and my experience of project jigsaw, gradle and spring.<p>
+<p>
+
+If you have any ideas please **feel free to contribute!** :) 
 
 --- 
 
@@ -39,3 +44,5 @@ OS:           Mac OS X 10.13.4 x86_64
 * **OR** Open terminal in the project root and run ```gradle clean build```, after that run created jar with ```java -jar jarname```
 
 ### How it works
+
+

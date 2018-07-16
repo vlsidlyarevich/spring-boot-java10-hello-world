@@ -1,3 +1,4 @@
+//Open for spring CGLIB
 open module hello {
     requires spring.beans;
     requires spring.core;

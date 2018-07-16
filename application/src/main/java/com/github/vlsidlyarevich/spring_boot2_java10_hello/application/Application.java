@@ -14,6 +14,7 @@ public class Application {
         final ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 
         var bean = context.getBean(HelloService.class);
+
         System.out.println(bean.getHello());
     }
 }

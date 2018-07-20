@@ -47,7 +47,8 @@ OS:           Mac OS X 10.13.4 x86_64
 
 There are 2 modules in the project: application and hello.
 
-* Hello module contains following [module-info.java](https://github.com/vlsidlyarevich/spring-boot-java10-hello-world/blob/master/hello/src/main/java/module-info.java):
+#### Hello module
+Hello module contains following [module-info.java](https://github.com/vlsidlyarevich/spring-boot-java10-hello-world/blob/master/hello/src/main/java/module-info.java):
 
 
 ```java
@@ -65,4 +66,25 @@ open module hello {
 There are several points about this module:
 * This module is **open for Spring scanning** of beans (needed for Spring flow, Spring using reflection with code generation and need access to code to register beans inside the module)
 * This module requires transitively spring dependencies, it means that modules that depends on this module can access spring dependencies without declaring that in their module-info.java.
-* This module exports two packages, this packages are available for another modules that will require this module.  
+* This module exports two packages, this packages are available for another modules that will require this module.
+
+--- 
+
+#### Application module
+Hello module contains following [module-info.java](https://github.com/vlsidlyarevich/spring-boot-java10-hello-world/blob/master/application/src/main/java/module-info.java):
+
+
+```java
+//Open for spring CGLIB
+open module application {
+    //BUG
+    requires java.sql;
+    requires spring.boot;
+    requires spring.boot.autoconfigure;
+
+    requires hello;
+}
+``` 
+
+There are several points about this module:
+* 

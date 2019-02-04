@@ -87,4 +87,6 @@ open module application {
 ``` 
 
 There are several points about this module:
-* 
+* This module is **open for Spring scanning** of beans (needed for Spring flow, Spring using reflection with code generation and need access to code to register beans inside the module)
+* This module requires spring dependencies.
+* This module requires hello module, thus it can use dependencies located in hello module.
